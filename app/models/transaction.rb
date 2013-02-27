@@ -3,6 +3,7 @@ class Transaction < ActiveRecord::Base
 
   # Scope
   scope :as_receipt, joins(:transaction_items)
+  # Transaction.joins(:transaction_item).where(:transaction_id => @transaction.id).select("transaction.*, transaction_item.*")
 
   # Relationships
   has_one :store
