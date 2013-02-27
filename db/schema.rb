@@ -30,9 +30,9 @@ ActiveRecord::Schema.define(:version => 20130227073403) do
   create_table "transaction_items", :force => true do |t|
     t.integer  "transaction_id"
     t.integer  "item_id"
-    t.string   "quantity_integer", :default => "1"
-    t.datetime "created_at",                        :null => false
-    t.datetime "updated_at",                        :null => false
+    t.integer  "quantity",       :default => 1
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
   end
 
   create_table "transactions", :force => true do |t|

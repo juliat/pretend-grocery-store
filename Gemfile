@@ -8,6 +8,11 @@ gem 'rails', '3.2.9'
 gem 'sqlite3'
 gem 'populator'
 
+# Gems used only in development
+group :development do
+    gem 'hirb'
+end
+
 
 # Gems used only for assets and not required
 # in production environments by default.
