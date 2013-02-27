@@ -1,3 +1,3 @@
 class TransactionItem < ActiveRecord::Base
-  attr_accessible :item_id, :quantity_integer, :transaction_id
+  attr_accessible :item_id, :quantity, :transaction_id
 end
