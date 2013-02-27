@@ -1,6 +1,9 @@
 class Transaction < ActiveRecord::Base
   attr_accessible :store_id, :time, :customer_id
 
+  # Scope
+  scope :as_receipt, joins(:transaction_items)
+
   # Relationships
   has_one :store
   has_many :transaction_items
