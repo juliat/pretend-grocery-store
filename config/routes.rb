@@ -1,4 +1,6 @@
 PretendGroceryStore::Application.routes.draw do
+  get "transactions/show"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
